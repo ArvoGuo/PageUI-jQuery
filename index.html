@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page</title>
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<style type="text/css">
+  body{
+    padding: 100px;
+  }
+</style>
+<body>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>index</th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+
+    </tbody>
+  </table>
+  <div id="page"></div>
+</body>
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="Page.js"></script>
+<script type="text/javascript">
+  var data = [
+    {index:1},
+    {index:2},
+    {index:3},
+    {index:4},
+    {index:5},
+    {index:6},
+    {index:7},
+    {index:8},
+    {index:9},
+    {index:10},
+    {index:11},
+    {index:12},
+    {index:13},
+    {index:14},
+    {index:15}
+    ];
+
+  var paintFn = function(data) {
+    var html = '';
+    data.map(function(item){
+      html += '<tr><td>' + item.index + '</td></tr>';
+    });
+    $('#tbody').html('').append(html);
+  };
+  var triggerFn = function(page) {
+    console.log('当前页数为：' + page);
+  };
+
+  var page = $.Page({
+    range: 3,
+    Ele: $('#page'),
+    data: data,
+    index: 1,
+    paintFn: paintFn,
+    triggerFn: triggerFn
+  });
+</script>
+</html>
