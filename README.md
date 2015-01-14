@@ -4,7 +4,7 @@ Base On Jquery
 
 ##Demo
 
-index.html
+[Demo](http://c.oooooo6.com/PageUI-jQuery/index.html)
 
 ##Use
 
