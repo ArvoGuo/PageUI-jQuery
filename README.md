@@ -10,13 +10,13 @@ index.html
 
 HTML
 
-```
+```html
 <div id="page"></div>
 ```
 
 JS
 
-```
+```javascript
 // data for demo
 var data = [
   {index:1},
