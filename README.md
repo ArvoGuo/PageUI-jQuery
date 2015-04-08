@@ -43,7 +43,7 @@ var data = [
 var paintFn = function(data) {
   var html = '';
   data.map(function(item){
-    html += '<tr><td>' + item.index + '</td></tr>';
+    html += '<tr><td>' + item.name + '</td></tr>';
   });
   $('#tbody').html('').append(html);
 };
