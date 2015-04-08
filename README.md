@@ -2,6 +2,8 @@
 A component of PageUI
 Base On Jquery
 
+翻页插件，jquery插件
+
 ##Demo
 
 [Demo](http://c.oooooo6.com/PageUI-jQuery/index.html)
@@ -19,22 +21,22 @@ JS
 ```javascript
 // data for demo
 var data = [
-  {index:1},
-  {index:2},
-  {index:3},
-  {index:4},
-  {index:5},
-  {index:6},
-  {index:7},
-  {index:8},
-  {index:9},
-  {index:10},
-  {index:11},
-  {index:12},
-  {index:13},
-  {index:14},
-  {index:15}
-  ];
+    {name: "小王"},
+    {name: "小王"},
+    {name: "小王"},
+    {name: "小明"},
+    {name: "小明"},
+    {name: "小明"},
+    {name: "小画"},
+    {name: "小画"},
+    {name: "小画"},
+    {name: "小见"},
+    {name: "小见"},
+    {name: "小见"},
+    {name: "小露"},
+    {name: "小露"},
+    {name: "小露"}
+];
 
 // paintFn for test
 
